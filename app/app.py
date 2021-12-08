@@ -1,10 +1,12 @@
-from flask import Flask,request,jsonify
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
+
 
 @app.route("/")
 def index():
     return "<h1>Hello!</h1>"
+
 
 @app.route('/json-example', methods=['POST'])
 def json_example():
@@ -32,4 +34,5 @@ def json_example():
 @app.route('/jsonexample', methods=['GET'])
 def getValues():
     d = {"aa": 23}
+
     return jsonify(d)
