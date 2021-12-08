@@ -1,0 +1,4 @@
+Temp - float
+Hum - float
+Pressure - float
+Speed - float
