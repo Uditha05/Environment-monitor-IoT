@@ -34,5 +34,4 @@ def json_example():
 @app.route('/jsonexample', methods=['GET'])
 def getValues():
     d = {"aa": 23}
-
     return jsonify(d)
